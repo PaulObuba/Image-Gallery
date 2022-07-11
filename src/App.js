@@ -20,11 +20,11 @@ function App() {
     <div className='container mx-auto'>
       <SearchImage setTerm={setTerm} />
 
-      {images.length === 0 && <h1 className='text-6xl text-center mx-auto m-32 '> No Images Found...</h1>}
+      {images.length === 0 && <h1 className='text-6xl text-center mx-auto m-32 '> </h1>}
 
       {loading ? <h1 className='text-6xl text-center mx-auto mt-32 '>
                     Loading...
-                </h1> : <div className='grid grid-cols-3 justify-items-center items-items-center gap-4'>
+                </h1> : <div className='grid md:grid-cols-2 lg:grid-cols-3 justify-items-center items-items-center gap-4'>
                            {images.map(image => <ImageCard key={image.id} image={image} />)}
                         </div>}
     </div>

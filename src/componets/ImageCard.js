@@ -4,7 +4,7 @@ const ImageCard = ({ image }) => {
     const tags = image.tags.split(',');
 
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col justify-between">
+        <div className="w-full p-5 rounded overflow-hidden shadow-lg flex flex-col justify-between">
             <div>
             <img src={image.webformatURL} alt='' className='w-full' />
             </div>
