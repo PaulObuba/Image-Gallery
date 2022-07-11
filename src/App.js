@@ -24,7 +24,7 @@ function App() {
 
       {loading ? <h1 className='text-6xl text-center mx-auto mt-32 '>
                     Loading...
-                </h1> : <div className='grid md:grid-cols-2 lg:grid-cols-3 justify-items-center items-items-center gap-4'>
+                </h1> : <div className='w-full grid md:grid-cols-2 lg:grid-cols-3 justify-items-center items-items-center gap-4'>
                            {images.map(image => <ImageCard key={image.id} image={image} />)}
                         </div>}
     </div>
